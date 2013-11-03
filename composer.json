@@ -1,0 +1,15 @@
+{
+    "name": "rosewood/rosewood",
+    "description": "Rosewood, a lightweight PHP framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuan Li",
+            "email": "liyuan0228@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    }
+}
