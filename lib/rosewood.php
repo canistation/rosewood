@@ -11,7 +11,8 @@ class Application
 
   public function run()
   {
-    print "Hello, world!";
+    echo "<pre>";
     var_dump($_SERVER);
+    echo "</pre>";
   }
 }

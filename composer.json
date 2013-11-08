@@ -10,6 +10,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-
+      "slim/slim": "2.3.5"
     }
 }

@@ -1,8 +1,18 @@
 <?php
+require 'vendor/autoload.php';
 
-require 'lib/rosewood.php';
+$app = new \Slim\Slim();
 
-use Rosewood as R;
+$app->get('/', function() {
+});
 
-$app = new R\Application();
+$app->get('/:action/:name/', function($action, $name) {
+  echo "$action, $name";
+});
+
 $app->run();
+
+//require 'lib/rosewood.php';
+//use Rosewood as R;
+//$app = new R\Application();
+//$app->run();
