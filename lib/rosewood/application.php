@@ -3,10 +3,10 @@ namespace Rosewood;
 
 class Application
 {
-  function __construct()
+  function __construct($config = [])
   {
     $this->router = new \Slim\Slim();
-    $this->config = [];
+    $this->config = $config;
   }
 
   public function run()
@@ -14,7 +14,12 @@ class Application
     $this->router->run();
   }
 
-  public function config($config)
+  public static function config($key = null)
+  {
+    return $key === null ? $this->config[$key] : $this->config;
+  }
+
+  public function configure($config)
   {
     $this->config = $config;
   }
