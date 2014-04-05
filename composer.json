@@ -11,6 +11,7 @@
     "minimum-stability": "dev",
     "require": {
       "slim/slim": "2.3.5",
-      "gabordemooij/redbean": "v3.5.1"
+      "gabordemooij/redbean": "v3.5.1",
+      "twig/twig": "v1.15.1"
     }
 }
